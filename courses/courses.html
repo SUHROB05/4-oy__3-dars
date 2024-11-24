@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <title>courses</title>
+  </head>
+  <body>
+    <div class="max-w-[1920px] mx-auto">
+      <!-- HEADER -->
+      <header class="bg-white from-pink-100 via-pink-50 to-pink-100 p-[25px]">
+        <div class="container max-w-[1230px] mx-auto px-4">
+          <nav class="flex justify-between items-center py-4">
+            <!-- Logo -->
+            <a
+              href="#"
+              class="text-xl font-bold text-gray-800 flex items-center"
+            >
+              <img src="./courses-img/header-logo.png" alt="Logo" />
+            </a>
+            <!-- Links -->
+            <ul class="hidden md:flex space-x-6 text-gray-800 font-medium">
+              <li><a href="#" class="hover:text-red-500">About Us</a></li>
+              <li>
+                <a href="./html/Courses.html" class="hover:text-red-500"
+                  >Courses</a
+                >
+              </li>
+              <li>
+                <a href="./html/Events.html" class="hover:text-red-500"
+                  >Events</a
+                >
+              </li>
+              <li><a href="#" class="hover:text-red-500">Blog</a></li>
+              <li><a href="#" class="hover:text-red-500">Contacts</a></li>
+            </ul>
+            <!-- Buttons -->
+            <div class="flex items-center space-x-4">
+              <button
+                class="hidden md:block bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600"
+              >
+                Get consultation
+              </button>
+
+              <button
+                data-modal-target="authentication-modal"
+                data-modal-toggle="authentication-modal"
+                class="flex items-center text-gray-800 hover:text-blue-700"
+              >
+                <img
+                  src="./courses-img/Profile.png"
+                  alt="Profile"
+                  class="w-6 h-6"
+                />
+                <span class="ml-2 text-sm font-medium">Log in / Register</span>
+              </button>
+
+              <!-- Authentication Modal -->
+              <div
+                id="authentication-modal"
+                tabindex="-1"
+                aria-hidden="true"
+                class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-screen"
+              >
+                <div class="relative p-4 w-full max-w-md max-h-full">
+                  <!-- Modal Content -->
+                  <div class="bg-white rounded-lg shadow dark:bg-gray-700">
+                    <!-- Modal Header -->
+                    <div
+                      class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600"
+                    >
+                      <h3
+                        class="text-xl font-medium text-gray-900 dark:text-white"
+                      >
+                        Sign up
+                      </h3>
+                      <button
+                        type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="authentication-modal"
+                      >
+                        <svg
+                          class="w-5 h-5"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 14 14"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M1 1l6 6m0 0l6 6M7 7L1 13m6-6L13 1"
+                          />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                      </button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="p-6 space-y-6">
+                      <form class="space-y-4">
+                        <div>
+                          <label
+                            for="fullName"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                            >Full Name</label
+                          >
+                          <input
+                            type="text"
+                            id="fullName"
+                            placeholder="Your full name"
+                            class="w-full p-2.5 text-sm border rounded-lg bg-gray-50 dark:bg-gray-600 dark:text-white dark:border-gray-500"
+                            required
+                          />
+                        </div>
+                        <div>
+                          <label
+                            for="email"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                            >Email</label
+                          >
+                          <input
+                            type="email"
+                            id="email"
+                            placeholder="Your working email"
+                            class="w-full p-2.5 text-sm border rounded-lg bg-gray-50 dark:bg-gray-600 dark:text-white dark:border-gray-500"
+                            required
+                          />
+                        </div>
+                        <div>
+                          <label
+                            for="password"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                            >Password</label
+                          >
+                          <input
+                            type="password"
+                            id="password"
+                            placeholder="••••••••"
+                            class="w-full p-2.5 text-sm border rounded-lg bg-gray-50 dark:bg-gray-600 dark:text-white dark:border-gray-500"
+                            required
+                          />
+                        </div>
+                        <div>
+                          <label
+                            for="confirmPassword"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                            >Confirm Password</label
+                          >
+                          <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="••••••••"
+                            class="w-full p-2.5 text-sm border rounded-lg bg-gray-50 dark:bg-gray-600 dark:text-white dark:border-gray-500"
+                            required
+                          />
+                        </div>
+                        <button
+                          type="submit"
+                          class="w-full px-5 py-2 text-white bg-blue-700 rounded-lg hover:bg-blue-800"
+                        >
+                          Sign up
+                        </button>
+                      </form>
+                      <p class="text-sm text-gray-500 dark:text-gray-400">
+                        Already have an account?
+                        <a
+                          href="#"
+                          class="text-blue-700 hover:underline dark:text-blue-500"
+                          >Sign in</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
